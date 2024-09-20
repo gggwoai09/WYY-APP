@@ -24,3 +24,10 @@ export function getBanner() {
         url: `/banner?type=${type}`  // 动态使用 type
     });
 }
+//发现好歌单
+export function getMusicList() {
+    return service({
+        method: "GET",
+        url: "/personalized?limit=11"
+    });
+}
